@@ -1,33 +1,30 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import mainLogo from "./assets/react-core-concepts.png";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <header className="text-center mt-[3rem] mb-[3rem]">
+          <img
+            src={mainLogo}
+            className="object-cover h-[5em] w-[10em] m-auto"
+            alt="Stylized atom"
+          />
+          <h1 className="text-[5rem] font-Roboto font-bold mt-[6px]">
+            React Essentials
+          </h1>
+          <p className="font-Roboto text-[#8964b0] m-0 text-[1.25rem]">
+            Fundamental React concepts you will need for almost any app you are
+            going to build!
+          </p>
+        </header>
+
+        <main className=" w-[90%] max-w-[50rem] m-auto">
+          <h2 className="text-center font-Roboto mb-[1.5rem] text-[#a18aba] text-[1.5em] font-bold">
+            Time to get started!
+          </h2>
+        </main>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   );
 }
