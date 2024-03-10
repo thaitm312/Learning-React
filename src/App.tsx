@@ -1,5 +1,5 @@
 import mainLogo from "./assets/react-core-concepts.png";
-import './app.css'
+import './App.css'
 
 function App() {
   return (
