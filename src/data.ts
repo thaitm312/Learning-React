@@ -2,9 +2,9 @@ import componentsImg from "./assets/components.png";
 import propsImg from "./assets/config.png";
 import jsxImg from "./assets/jsx-ui.png";
 import stateImg from "./assets/state-mgmt.png";
-import { coreConceptParams } from "./components/CoreConcept";
+import { CoreConceptProps } from "./components/CoreConcept";
 
-export const CORE_CONCEPTS: coreConceptParams[] = [
+export const CORE_CONCEPTS: CoreConceptProps[] = [
   {
     image: componentsImg,
     title: "Components",

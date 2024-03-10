@@ -1,22 +1,20 @@
-import { FC } from "react";
-
-export interface coreConceptParams {
+export interface CoreConceptProps {
   image: string;
   title: string;
   description: string;
 }
 
-const CoreConcept: FC<coreConceptParams> = (props: coreConceptParams) => {
+const CoreConcept = ({ image, title, description }: CoreConceptProps) => {
   return (
     <>
       <li className="w-[10rem] text-center">
         <img
-          src={props.image}
-          alt={props.title}
-          className="h-[4rem] w-[6rem] object-cover m-auto"
+          src={image}
+          alt={title}
+          className="m-auto h-[4rem] w-[6rem] object-cover"
         />
-        <h3 className="mb-[0.5rem] mt-[0.5rem]">{props.title}</h3>
-        <p className="text-[0.9rem]">{props.description}</p>
+        <h3 className="mb-[0.5rem] mt-[0.5rem]">{title}</h3>
+        <p className="text-[0.9rem]">{description}</p>
       </li>
     </>
   );
